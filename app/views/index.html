@@ -29,42 +29,23 @@
     </head>
 
     <body>
-        <!--<input type="text" class="form-control" value="2012-05-15 21:05" id="datetimepicker">-->
-        <div class="form-group">
-            <label for="dtp_input1" class="col-md-2 control-label">DateTime Picking</label>
-            <div class="input-group date form_datetime col-md-5" data-date="1979-09-16T05:25:07Z" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
-                <input class="form-control" size="16" type="text" value="" readonly>
-                <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
-                <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+
+        <header class="header">
+            <!--Logo-->
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <img src="../img/logo.png" alt="Logo">
+                </a>
             </div>
-            <input type="hidden" id="dtp_input1" value="" /><br/>
-        </div>
+            <div class="header-right">
+                <!--Search Input-->
+                <form action="#" class="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                </form>
+            </div>
+        </header>
 
-        <select id="example-single">
-            <option value="1">Option 1</option>
-            <option value="2">Option 2</option>
-            <option value="3">Option 3</option>
-            <option value="4">Option 4</option>
-            <option value="5">Option 5</option>
-            <option value="6">Option 6</option>
-        </select>
-
-        <span class="glyphicon glyphicon-arrow-right"></span>
-
-        <script type="text/javascript">
-            $('.form_datetime').datetimepicker({
-                language:  'zh-CN',
-                format: 'yyyy-mm-dd hh:ii',
-                weekStart: 1,
-                todayBtn:  1,
-                autoclose: 1,
-                todayHighlight: 1,
-                startView: 2,
-                forceParse: 0,
-                showMeridian: 1
-            });
-
-            $('#example-single').multiselect();
-        </script>
     </body>
 </html>
