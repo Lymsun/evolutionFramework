@@ -9,6 +9,7 @@ body {
   font-family: "Open Sans", Arial, sans-serif;
   overflow-x: hidden;
   overflow-y: scroll;
+  line-height: 22px;
 }
 
 input {
@@ -22,19 +23,23 @@ ul, li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*
 ***************start*****************
 *header style
 */
-@media only screen and (min-width: 768px)
 .header {
   position: fixed;
+  width: 100%;
   z-index: 1020;
 }
 
 .header {
   background-color: #f6f6f6;
-  background-image: -webkit-linear-gradient(#f6f6f6 0%, white-space 45%);
+  background-image: -webkit-linear-gradient(#f6f6f6 0%, white 45%);
   background-image: linear-gradient(#f6f6f6 0%, white 45%);
   height: 60px;
   left: 0;
@@ -107,17 +112,55 @@ ul, li {
 
 .header-right .notifications {
   display: inline-block;
+  padding: 0;
+  margin: 4px -10px 0 0;
+  vertical-align: middle;
 }
 
 .header-right .notifications li {
   float: left;
   position: relative;
+  margin: 0 10px 0 0;
+}
+
+.header-right .notifications .notifications-icon {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: #777;
+  box-sizing: border-box;
+}
+
+.header-right .notifications .notifications-icon:hover {
+  border: 1px solid #ccc;
+}
+
+.header-right .notifications .notifications-icon i {
+  line-height: 32px;
+}
+
+.header-right .notifications .notifications-icon .badge {
+  background: #D2312D;
+  color: #fff;
+  font-size: 10px;
+  position: absolute;
+  padding: 3px 5px 3px 5px;
+  top: -3px;
+  right: -8px;
 }
 
 .header-right .separator {
   background-color: #f6f6f6;
-  background-image: linear-gradient(#f6f6f6, 60%, #ededed);
-  background-image: -webkit-linear-gradient(#f6f6f6, 60%, #ededed);
+  background-image: linear-gradient(#f6f6f6 60%, #ededed);
+  background-image: -webkit-linear-gradient(#f6f6f6 60%, #ededed);
   display: inline-block;
   height: 100%;
   width: 2px;
