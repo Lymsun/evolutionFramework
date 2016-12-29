@@ -11,6 +11,17 @@ body {
   overflow-y: scroll;
 }
 
+input {
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
 /*
 ***************start*****************
 *header style
@@ -55,6 +66,63 @@ body {
   width: 170px;
   display: inline-block;
   vertical-align: middle;
+}
+
+.header-right .search .input-search {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.header-right .search .input-search input {
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius:500px;
+}
+
+.search .input-search .input-group-btn .btn {
+  background: transparent;
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: -36px;
+  bottom: 0;
+  z-index: 3;
+  color: #ccc;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius:500px;
+}
+
+.search .input-search .input-group-btn button {
+  outline: none;
+}
+  
+.search .input-search .input-group-btn .btn:hover {
+  color: #333;
+}
+
+.search .input-search .input-group-btn .btn:active {
+  box-shadow: none;
+}
+
+.header-right .notifications {
+  display: inline-block;
+}
+
+.header-right .notifications li {
+  float: left;
+  position: relative;
+}
+
+.header-right .separator {
+  background-color: #f6f6f6;
+  background-image: linear-gradient(#f6f6f6, 60%, #ededed);
+  background-image: -webkit-linear-gradient(#f6f6f6, 60%, #ededed);
+  display: inline-block;
+  height: 100%;
+  width: 2px;
+  vertical-align: middle;
+  margin: 0 25px 0;
 }
 /*
 *header style
