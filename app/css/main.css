@@ -157,6 +157,40 @@ a {
   right: -8px;
 }
 
+.header-right .userBox {
+  display: inline-block;
+  margin: 3px 17px 0 0;
+  vertical-align: middle;
+  position: relative;
+}
+
+/*.userBox a {
+  text-decoration: none;
+}*/
+
+.userBox .profile-pic {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.userBox .profile-pic img {
+  width: 35px;
+  background: transparent;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.userBox .profile-info .userName {
+  color: #000011;
+  font-size: 13px;
+}
+
+.userBox .profile-info .userRole {
+  color: #ACACAC;
+  font-size: 11px;
+}
+
 .header-right .separator {
   background-color: #f6f6f6;
   background-image: linear-gradient(#f6f6f6 60%, #ededed);
