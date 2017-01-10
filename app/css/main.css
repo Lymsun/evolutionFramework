@@ -164,9 +164,9 @@ a {
   position: relative;
 }
 
-/*.userBox a {
+.userBox a {
   text-decoration: none;
-}*/
+}
 
 .userBox .profile-pic {
   display: inline-block;
@@ -181,14 +181,22 @@ a {
   border-radius: 50%;
 }
 
+.userBox .profile-info {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 25px 0 10px;
+}
+
 .userBox .profile-info .userName {
   color: #000011;
   font-size: 13px;
+  display: block;
 }
 
 .userBox .profile-info .userRole {
   color: #ACACAC;
   font-size: 11px;
+  display: block;
 }
 
 .header-right .separator {
@@ -205,3 +213,8 @@ a {
 *header style
 ****************end******************
 */
+
+#test {
+  width: 100%;
+  position: fixed;
+}
