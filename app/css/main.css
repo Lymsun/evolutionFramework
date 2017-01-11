@@ -166,6 +166,8 @@ a {
 
 .userBox a {
   text-decoration: none;
+  position: relative;
+  z-index: 993;
 }
 
 .userBox .profile-pic {
@@ -185,6 +187,7 @@ a {
   display: inline-block;
   vertical-align: middle;
   margin: 0 25px 0 10px;
+  line-height: 12px;
 }
 
 .userBox .profile-info .userName {
@@ -197,6 +200,38 @@ a {
   color: #ACACAC;
   font-size: 11px;
   display: block;
+}
+
+.userBox a .glyphicon-chevron-down{
+  color: #000011;
+  font-size: 10px;
+  font-weight: lighter;
+}
+
+.userBox.open .dropdown-menu {
+  border: none;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 45px 10px 0;
+  width: 100%;
+  z-index: 992;
+  top: -10px;
+  left: -10px;
+}
+
+.userBox.open .dropdown-menu a {
+  border-radius: 2px;
+  color: #7d7d7d;
+  display: block;
+  font-size: 14px;
+  line-height: 15px;
+  padding: 5px 10px;
+}
+
+.userBox.open .dropdown-menu a i {
+  margin-right: 5px;
 }
 
 .header-right .separator {
