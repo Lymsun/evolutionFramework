@@ -193,8 +193,8 @@
                                             <div class="imageIcon">
                                                 <i class="glyphicon glyphicon-lock bg-warning"></i>
                                             </div>
-                                            <span>User Locked</span>
-                                            <span>15 minutes ago</span>
+                                            <span class="alertMessage">User Locked</span>
+                                            <span class="alertStatus">15 minutes ago</span>
                                         </a>
                                     </li>
                                     <li>
@@ -202,9 +202,15 @@
                                             <div class="imageIcon">
                                                 <i class="glyphicon glyphicon-signal bg-success"></i>
                                             </div>
+                                            <span class="alertMessage">Connection Resulted</span>
+                                            <span class="alertStatus">27/02/2017</span>
                                         </a>
                                     </li>
                                 </ul>
+                                <hr>
+                                <div class="text-right">
+                                    <a href="#" class="viewAll">View All</a>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -250,12 +256,20 @@
         <!--end: header-->
 
         <div class="inner-wrapper">
-            <!--start: sidebar-->
-            <div class="sidebar-left">
-                <div class="sidebar-head"></div>
+            <!--start: sidebar-left-->
+            <div id="sidebar-left" class="sidebar-left">
+                <div class="sidebar-head">
+                    <div class="sidebar-title">Navigation</div>
+                    <div class="siderbar-toggle">
+                        <i class="glyphicon glyphicon-menu-hamburger"></i>
+                    </div>
+                </div>
                 <div class="nano"></div>
             </div>
-            <!--end: sidebar-->
+            <!--end: sidebar-left-->
+
+            <!--start: content-->
+            <!--end: content-->
         </div>
 
         <!--start: test-->
