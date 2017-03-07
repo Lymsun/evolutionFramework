@@ -563,7 +563,14 @@ a
 ****************end******************
 */
 
+.inner-wrapper
+{
+    display: block;
+    overflow: hidden;
 
+    width: 100%;
+    padding-top: 110px;
+}
 
 /*
 ***************start*****************
@@ -572,11 +579,125 @@ a
 .sidebar-left
 {
     position: fixed;
+    z-index: 1010;
     top: 60px;
+    bottom: 0;
+    left: 0;
+
+    width: 300px;
+    padding-bottom: 50px;
+
+    vertical-align: top;
+
+    color: #777;
+    background-color: #1d2127;
+    box-shadow: -5px 0 0 #2f3139 inset;
 }
 
+.sidebar-left .sidebar-head
+{
+    font-size: 1.5rem;
 
+    height: 50px;
 
+    color: #465162;
+}
+
+.sidebar-left .sidebar-head .sidebar-title
+{
+    padding: 15px;
+}
+
+.sidebar-left .sidebar-head .siderbar-toggle
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 73px;
+    height: 50px;
+
+    cursor: pointer;
+    text-align: center;
+
+    color: #c3c3c3;
+    border-radius: 0 0 0 5px;
+    background-color: #171717;
+}
+
+.sidebar-left .sidebar-head .siderbar-toggle i
+{
+    font-size: 1.7rem;
+    line-height: 50px;
+
+    transition: all .15s ease-in-out;
+
+    color: #c3c3c3;
+}
+
+.sidebar-left .sidebar-head .siderbar-toggle:hover i
+{
+    color: #08c;
+}
+
+.nano
+{
+    width: 300px;
+    height: 100%;
+}
+
+.nano > .nano-pane
+{
+    width: 4px;
+    margin: 0;
+
+    border-radius: 0;
+}
+
+.nano > .nano-pane > .nano-slider
+{
+    margin: 0;
+
+    border-radius: 0;
+    background-color: #08c;
+}
+
+.nav-main li a
+{
+    font-size: 1.3rem;
+
+    padding: 12px 25px;
+
+    white-space: nowrap;
+    text-decoration: none;
+
+    color: #abb4be;
+}
+
+.nav-main li a:hover
+{
+    background-color: #21262d;
+}
+
+.nav-main li a:focus
+{
+    background-color: #21262d;
+}
+
+.nav-main .nav-active > a
+{
+    box-shadow: 2px 0 0 #08c inset;
+}
+
+.nav-main li a i
+{
+    font-size: 1.8rem;
+
+    margin-right: 12px;
+
+    text-align: center;
+    vertical-align: top;
+}
 
 /*
 *sidebar style
