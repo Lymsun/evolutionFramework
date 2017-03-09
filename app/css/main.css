@@ -701,13 +701,16 @@ a
 
 .nav-parent > a:after
 {
-    font-family: Glyphicons";
-    content: '\e001';
-    color: #abb4be;
-    position: absolute;
-    right: 0;
-    top: 0;
+    font-family: 'Glyphicons Halflings';
     font-size: 16px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    content: '\e602';
+
+    color: #abb4be;
 }
 
 /*
