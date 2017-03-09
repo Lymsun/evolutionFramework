@@ -699,6 +699,17 @@ a
     vertical-align: top;
 }
 
+.nav-parent > a:after
+{
+    font-family: Glyphicons";
+    content: '\e001';
+    color: #abb4be;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 16px;
+}
+
 /*
 *sidebar style
 ****************end******************
